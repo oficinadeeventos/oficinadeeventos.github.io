@@ -11,7 +11,7 @@ class AlbumService {
         List albuns = facebookClient.fetchObject("117581011698155/albums").data.findAll {it.count > 0 && !it.name.contains("Profile")}
         if (tipo)
             albuns = albuns.findAll {it.name.contains(tipo)}
-        SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DDhh:mm:ss")
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-ddhh:mm:ss")
         albuns.each {
             if (it.cover_photo)
                 it.cover_photo_url = facebookClient.fetchObject(it.cover_photo).picture
