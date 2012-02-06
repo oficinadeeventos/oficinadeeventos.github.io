@@ -13,16 +13,16 @@ modules = {
     }
     bootstrap {
         dependsOn 'jquery'
-        switch (Environment.current) {
-            case (Environment.PRODUCTION):
-                resource url: 'css/bootstrap.min.css'
-                resource url: 'js/bootstrap.min.js'
-                break
-            default:
-                resource url: 'css/bootstrap.css'
-                resource url: 'js/bootstrap.js'
-                break
-        }
+//        switch (Environment.current) {
+//            case (Environment.PRODUCTION):
+//                resource url: 'css/bootstrap.min.css'
+//                resource url: 'js/bootstrap.min.js'
+//                break
+//            default:
+        resource url: 'css/bootstrap.css'
+        resource url: 'js/bootstrap.js'
+        //        break
+        //}
 
         resource url: 'css/bootstrap-responsive.css'
     }
