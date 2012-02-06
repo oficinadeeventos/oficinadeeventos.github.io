@@ -3,6 +3,29 @@
 <head>
     <meta name="layout" content="principal"/>
     <title>- Albuns de Fotos</title>
+    <style type="text/css">
+    .thumbnail {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        clip: rect(0px, 160px, 160px, 0px);
+        display: inline-block;
+        height: auto;
+        image-rendering: optimizeQuality;
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+        width: auto;
+    }
+
+    .span4 {
+        width: 160px;
+        height: 180px;
+        overflow: hidden;
+        position: relative;;
+    }
+    </style>
 </head>
 
 <body>
@@ -19,8 +42,11 @@
                 <div class="span4" style="text-align: center; margin-bottom: 20px;">
                     <a href="${createLink(action: 'show', id: album.id)}">
                         <img class="thumbnail" style="margin: auto" src="${album.cover_photo_url}"
-                             alt="${album.name}"/><br/>
-                        ${album.name} (${album.count})
+                             alt="${album.name}"/>
+
+                        <p>
+                            ${album.name} (${album.count})
+                        </p>
                     </a>
                 </div>
             </g:each>
