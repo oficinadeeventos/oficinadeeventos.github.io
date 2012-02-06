@@ -40,7 +40,7 @@
 </div>
 
 <div class="row">
-    <h4>Últimos eventos:</h4>
+    <h4>Mais sobre Oficina de Eventos:</h4>
 
     <div class="span5">
         <h5>Loren impsun</h5>

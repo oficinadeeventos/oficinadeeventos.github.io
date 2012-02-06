@@ -5,6 +5,10 @@ import siteoficinadeeventos.SecRole
 class BootStrap {
 
     def init = { servletContext ->
+        String.metaClass.short {int cut ->
+            delegate.size() <= cut ? delegate : delegate.substring(0, cut - 1) + "..."
+        }
+
         def userRole = SecRole.findByAuthority('ROLE_USER') ?: new SecRole(authority: 'ROLE_USER').save(failOnError: true)
         def adminRole = SecRole.findByAuthority('ROLE_ADMIN') ?: new SecRole(authority: 'ROLE_ADMIN').save(failOnError: true)
 

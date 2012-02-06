@@ -56,7 +56,8 @@
 
         <div style="clear: both;"></div>
 
-        <div class="fb-like pull-right" data-href="http://www.facebook.com/pages/Oficina-de-Eventos/117581011698155"
+        <div class="fb-like" style="padding-bottom: 20px;"
+             data-href="http://www.oficinadeeventos.com/album/show/${album.id}"
              data-send="true" data-layout="button_count" data-width="180" data-show-faces="true"
              data-font="lucida grande"></div>
     </div>

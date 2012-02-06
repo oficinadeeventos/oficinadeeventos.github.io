@@ -12,12 +12,13 @@
     <div class="inner row">
         <div class="span14">
             <div style="padding-bottom: 30px;">
-                <h1 style="margin-bottom: 5px;">Guia de noivas</h1>
+                <h1 style="margin-bottom: 5px;">${artigo.titulo}</h1>
                 <span style="margin-left: 15px;">Em <g:link action="noivas">Artigos</g:link></span>
             </div>
-            <g:each in="${artigos}" var="artigo">
-                <h3><a href="${createLink(action: 'leia', id: artigo.id)}">${artigo.titulo}</a></h3>
-            </g:each>
+
+            <div style="text-align: justify; line-height: 18px;">
+                ${artigo.texto}
+            </div>
         </div>
 
         <div class="span6" style="margin-left: 30px;">

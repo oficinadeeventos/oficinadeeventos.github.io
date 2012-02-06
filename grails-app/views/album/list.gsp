@@ -27,37 +27,7 @@
         </div>
 
         <div class="span6">
-            <h2>Guia de noivas</h2>
-
-            <div>
-                <h3>Loren ipsum dolor</h3>
-
-                <p>
-                    This profile may be adopted by standards which require an unambiguous representation of dates and times.
-                    As different standards have their own requirements regarding granularity and flexibility, this profile
-                    offers a number of options. An adopting standard must specify which of these options it permits.
-                </p>
-            </div>
-
-            <div>
-                <h3>Loren ipsum dolor</h3>
-
-                <p>
-                    This profile may be adopted by standards which require an unambiguous representation of dates and times.
-                    As different standards have their own requirements regarding granularity and flexibility, this profile
-                    offers a number of options. An adopting standard must specify which of these options it permits.
-                </p>
-            </div>
-
-            <div>
-                <h3>Loren ipsum dolor</h3>
-
-                <p>
-                    This profile may be adopted by standards which require an unambiguous representation of dates and times.
-                    As different standards have their own requirements regarding granularity and flexibility, this profile
-                </p>
-            </div>
-
+            <g:render template="../guia/listagem"/>
             <div style="height: 30px; width: 100%"></div>
 
             <div class="fb-like-box" data-href="http://www.facebook.com/pages/Oficina-de-Eventos/117581011698155"

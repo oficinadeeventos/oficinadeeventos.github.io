@@ -6,7 +6,8 @@ import java.text.SimpleDateFormat
 class AlbumController {
     def facebookAppService
     def imageService
-    Map tipos = ["Formatura": "Fromaturas", "Casamento": "Casamentos", "Aniver": "Aniversários"]
+    def albumService
+    Map tipos = ["Formatura": "Formaturas", "Casamento": "Casamentos", "Aniver": "Aniversários"]
 
     def beforeInterceptor = {
         request.appId = facebookAppService.appId
@@ -19,17 +20,7 @@ class AlbumController {
     }
 
     def list() {
-        def facebookClient = new FacebookGraphClient(facebookAppService.getAccessToken())
-        List albuns = facebookClient.fetchObject("117581011698155/albums").data.findAll {it.count > 0 && !it.name.contains("Profile")}
-        if (params.id)
-            albuns = albuns.findAll {it.name.contains(params.id)}
-        SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DDhh:mm:ss")
-        albuns.each {
-            if (it.cover_photo)
-                it.cover_photo_url = facebookClient.fetchObject(it.cover_photo).picture
-            it.date_created_time = sdf.parse(it.created_time.replaceAll("T", ""))
-        }
-
+        List albuns = albumService.listAlbuns(params.id)
         String tipo = tipos[params.id] ?: "Eventos"
         albuns.sort(false) {it.date_created_time}
         [albuns: albuns, tipo: tipo]

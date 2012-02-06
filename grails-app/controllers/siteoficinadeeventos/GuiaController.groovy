@@ -3,7 +3,12 @@ package siteoficinadeeventos
 class GuiaController {
 
     def noivas() {
-        Artigo artigo = Artigo.list()[1]
+        List artigos = Artigo.findAllByTipo(Artigo.GUIA_CASAMENTOS)
+        [artigos: artigos]
+    }
+
+    def leia() {
+        Artigo artigo = Artigo.get(params.id)
         [artigo: artigo]
     }
 }
