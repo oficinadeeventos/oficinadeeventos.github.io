@@ -14,6 +14,12 @@
     <r:require module="principal"/>
     <r:layoutResources/>
     <r:layoutResources/>
+
+    <style type="text/css">
+    .container {
+        width: 940px;
+    }
+    </style>
 </head>
 
 <body>
