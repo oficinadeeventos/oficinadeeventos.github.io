@@ -1,5 +1,3 @@
-import grails.util.Environment
-
 modules = {
     jquery152 {
         resource url: 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'
@@ -13,17 +11,8 @@ modules = {
     }
     bootstrap {
         dependsOn 'jquery'
-//        switch (Environment.current) {
-//            case (Environment.PRODUCTION):
-//                resource url: 'css/bootstrap.min.css'
-//                resource url: 'js/bootstrap.min.js'
-//                break
-//            default:
         resource url: 'css/bootstrap.css'
         resource url: 'js/bootstrap.js'
-        //        break
-        //}
-
         resource url: 'css/bootstrap-responsive.css'
     }
     principal {
