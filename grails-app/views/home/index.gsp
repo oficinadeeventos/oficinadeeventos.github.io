@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <meta property="fb:page_id" content="117581011698155" />
     <meta name="layout" content="principal"/>
     <title>Oficina de Eventos</title>
     <r:require module="home"/>

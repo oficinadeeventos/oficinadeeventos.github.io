@@ -149,6 +149,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SiteOficinaDeEventos.iml" filepath="$PROJECT_DIR$/SiteOficinaDeEventos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SiteOficinaDeEventos-grailsPlugins.iml" filepath="$PROJECT_DIR$/SiteOficinaDeEventos-grailsPlugins.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
