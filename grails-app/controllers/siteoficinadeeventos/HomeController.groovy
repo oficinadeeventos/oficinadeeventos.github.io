@@ -24,7 +24,7 @@ class HomeController {
                     tipo: 'Albúm de fotos',
                     url: createLink(controller: 'album', action: 'show', id: it.id)]
         }
-        List artigos = Artigo.list(max: 2, sort: 'dateCreated')
+        List artigos = Artigo.list(max: 2)
         highLights += artigos.collect {
             [titulo: it.titulo.short(32),
                     descricao: it.descricaoCurta,

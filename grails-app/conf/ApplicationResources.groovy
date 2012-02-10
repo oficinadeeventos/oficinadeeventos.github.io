@@ -11,9 +11,8 @@ modules = {
     }
     bootstrap {
         dependsOn 'jquery'
-        resource url: 'css/bootstrap.css'
+        resource url: 'http://twitter.github.com/bootstrap/assets/css/bootstrap.css'
         resource url: 'js/bootstrap.js'
-        resource url: 'css/bootstrap-responsive.css'
     }
     principal {
         dependsOn 'bootstrap'

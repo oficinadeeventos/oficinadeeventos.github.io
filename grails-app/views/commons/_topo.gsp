@@ -11,6 +11,7 @@
     clip: rect(0px, auto, auto, 0px);
     top: -${new Random().nextInt(4) * 100}px;
 }
+
 </style>
 
 <div class="topo">

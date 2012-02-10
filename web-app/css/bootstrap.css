@@ -94,6 +94,22 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
 .row {
   margin-left: -20px;
   *zoom: 1;
@@ -260,11 +276,11 @@ textarea {
 p {
   margin: 0 0 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
 }
 p small {
-  font-size: 10px;
+  font-size: 11px;
   color: #999999;
 }
 .lead {
@@ -445,7 +461,7 @@ cite {
 code, pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 11px;
+  font-size: 12px;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -482,7 +498,7 @@ pre code {
 }
 .label {
   padding: 1px 3px 2px;
-  font-size: 9px;
+  font-size: 9.75px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -647,7 +663,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 27px;
-  font-size: 18px;
+  font-size: 19.5px;
   line-height: 36px;
   color: #333333;
   border: 0;
@@ -659,7 +675,7 @@ button,
 select,
 textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
   line-height: 18px;
 }
@@ -677,7 +693,7 @@ select,
   height: 18px;
   padding: 4px;
   margin-bottom: 9px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #555555;
   border: 1px solid #ccc;
@@ -703,7 +719,9 @@ input[type="image"], input[type="checkbox"], input[type="radio"] {
   line-height: normal;
   border: 0;
   cursor: pointer;
-  border-radius: 0 \0/;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 input[type="file"] {
   padding: initial;
@@ -1122,7 +1140,7 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 .btn {
   display: inline-block;
   padding: 4px 10px 4px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #333333;
   text-align: center;
@@ -1188,7 +1206,7 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 }
 .btn-large {
   padding: 9px 14px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: normal;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1199,7 +1217,7 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 }
 .btn-small {
   padding: 5px 9px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 16px;
 }
 .btn-small .icon {
@@ -1895,12 +1913,12 @@ button.btn.small, input[type="submit"].btn.small {
 .nav-list > li + .nav-header {
   margin-top: 9px;
 }
-.nav-list .active > a {
+.nav-list .active > a, .nav-list .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #0088cc;
 }
-.nav-list .icon {
+.nav-list [class^="icon-"] {
   margin-right: 2px;
 }
 .nav-tabs, .nav-pills {
@@ -1923,7 +1941,7 @@ button.btn.small, input[type="submit"].btn.small {
   padding-right: 12px;
   padding-left: 12px;
   margin-right: 2px;
-  line-height: 18px;
+  line-height: 14px;
 }
 .nav-tabs {
   border-bottom: 1px solid #ddd;
@@ -2768,6 +2786,25 @@ a.thumbnail:hover {
   background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.hero-unit p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
 }
 .tooltip {
   position: absolute;

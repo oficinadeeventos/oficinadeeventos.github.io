@@ -1,10 +1,7 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Oficina de Eventos <g:layoutTitle default=""/></title>
@@ -21,6 +18,22 @@
     }
     </style>
 </head>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28336406-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
 
 <body>
 <div id="fb-root"></div>
@@ -46,8 +59,8 @@
         </p>
 
         <p>
-            &#169; Oficina de Eventos. Avenida Portugal n.41, Setor Oeste, Goiânia GO / (62) 3622 7245<br/><br/>
-            Desenvolvido por <a href="http://twitter.com/cleydsonjr" target="_blank">@cleydsonjr</a>.<br/>
+            &#169; Oficina de Eventos.<br/><br/>Atendimento com <a
+                href="${createLink(controller: 'contatos')}">hora marcada</a>: (62) 3622 7245<br/><br/>
         </p>
     </div>
 </footer>

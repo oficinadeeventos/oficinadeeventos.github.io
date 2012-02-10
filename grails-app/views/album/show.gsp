@@ -11,9 +11,10 @@
 <div class="content">
     <g:render template="../commons/topo"/>
 
-    <div class="inner">
-        <div style="padding-bottom: 30px;">
-            <h1 style="margin-bottom: 5px;">${album.name}</h1>
+    <div class="inner" style="position: relative;">
+        <g:render template="../commons/topmenu"/>
+        <div style="padding-top:30px; padding-bottom: 30px;">
+            <h2 style="margin-bottom: 5px;">${album.name}</h2>
         <span style="margin-left: 15px">Em <g:link action="index">Albuns</g:link>
             <g:if test="${categoria}">
                 / <g:link action="list" id="${categoria.nome}">${categoria.descricao}</g:link></span>

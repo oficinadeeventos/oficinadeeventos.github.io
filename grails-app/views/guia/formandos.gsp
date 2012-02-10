@@ -13,45 +13,13 @@
         <g:render template="../commons/topmenu"/>
         <div class="span8">
             <div style="padding-top: 30px; padding-bottom: 30px;">
-                <h2 style="margin-bottom: 5px;">${artigo.titulo}</h2>
+                <h2 style="margin-bottom: 5px;">Guia de Formandos</h2>
                 <span style="margin-left: 15px;">Em <g:link action="noivas">Artigos</g:link></span>
             </div>
-
-            <div style="text-align: justify; line-height: 18px;">
-                ${artigo.texto}
-            </div>
+            <g:each in="${artigos}" var="artigo">
+                <h3><a href="${createLink(action: 'leia', id: artigo.id)}">${artigo.titulo}</a></h3>
+            </g:each>
         </div>
-        <style type="text/css">
-        .span4 {
-            width: 260px;
-        }
-
-        .span8 {
-            width: 610px;
-        }
-
-        .span4 h2 {
-            font-size: 20px;
-            letter-spacing: -0.03em;
-            line-height: 28px;
-        }
-
-        .span4 p {
-            font-size: 11px;
-            font-weight: normal;
-            line-height: 14px;
-            margin-bottom: 7px;
-            font-family: inherit;
-        }
-
-        body {
-            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-            font-size: 12px;
-            font-weight: normal;
-            line-height: 15px;
-            color: #333;
-        }
-        </style>
 
         <div class="span4" style="margin-left: 30px;">
             <g:render template="listagem"/>

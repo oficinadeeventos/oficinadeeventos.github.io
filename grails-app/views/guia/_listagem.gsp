@@ -1,7 +1,7 @@
 <%@ page import="siteoficinadeeventos.Artigo" %>
-<h2>Guia de noivas</h2>
+<h3>Guia de noivas</h3>
 <g:each in="${Artigo.list(max: 3)}" var="artigo">
-    <div class="actions" style="padding: 10px 10px 20px;">
+    <div class="form-actions" style="padding: 10px 10px 20px;">
         <p><b>${artigo.titulo}</b></p>
 
         <p style="text-align: justify">

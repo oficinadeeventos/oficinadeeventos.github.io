@@ -9,10 +9,11 @@
 <div class="content">
     <g:render template="../commons/topo"/>
 
-    <div class="inner row">
-        <div class="span14">
-            <div style="padding-bottom: 30px;">
-                <h1 style="margin-bottom: 5px;">Guia de noivas</h1>
+    <div class="inner row" style="position: relative;">
+        <g:render template="../commons/topmenu"/>
+        <div class="span8">
+            <div style="padding-top: 30px; padding-bottom: 30px;">
+                <h2 style="margin-bottom: 5px;">Guia de noivas</h2>
                 <span style="margin-left: 15px;">Em <g:link action="noivas">Artigos</g:link></span>
             </div>
             <g:each in="${artigos}" var="artigo">
@@ -20,7 +21,7 @@
             </g:each>
         </div>
 
-        <div class="span6" style="margin-left: 30px;">
+        <div class="span4" style="margin-left: 30px;">
             <g:render template="listagem"/>
 
             <div style="height: 30px; width: 100%"></div>
