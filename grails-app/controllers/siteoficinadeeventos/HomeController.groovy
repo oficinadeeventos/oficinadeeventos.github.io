@@ -1,7 +1,5 @@
 package siteoficinadeeventos
 
-import grails.plugins.facebooksdk.FacebookGraphClient
-
 class HomeController {
     def facebookAppService
     def albumService
