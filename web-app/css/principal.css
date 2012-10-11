@@ -326,3 +326,80 @@ body {
     height: 7px;
     width: 14px;
 }
+
+.frontpage-section {
+	display: inline-block;
+	margin: 40px;
+	margin-right: 0;
+	position: relative;
+	vertical-align: top;
+	width: 420px;
+}
+
+#frontpage-content {
+	padding: 0 !important;
+}
+#frontpage-content .content {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: auto;
+	position: relative;
+	width: 937px;
+}
+
+.content-body {
+	box-shadow: 0 -0.5em 2em rgba(0, 0, 0, 0.1);
+	margin-bottom: 40px !important;
+	padding: 30px !important;
+	position: relative;
+}
+.content-body:after {
+	border-top: 0.5em solid white;
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -0.4em;
+	left: 50%;
+	margin-left: -0.5em;
+	z-index: 2;
+}
+.content-body > .content ul, .content-body > .content ol {
+	margin-left: 1em;
+}
+.content-body > .content li {
+	margin: 1em;
+}
+.content {
+	background-color: rgba(255, 255, 255, 0.62);
+	min-height: 480px;
+	margin-right: 10px;
+	position: relative;
+}
+.content .form-subtitle {
+	color: #050505;
+	font-size: 1.15em;
+	font-weight: normal;
+	margin: 1.5em 0 0.5em 0;
+}
+.content .form-subtitle:first-child {
+	margin-top: 0;
+}
+.content h2 {
+	margin: 1.25em 0 0.7em 0;
+}
+.content h2.bigger {
+	font-size: 1.75em;
+	font-weight: 400;
+	margin: 0.8em 0 0.5em 0;
+}
+.content h2 .note {
+	font-size: 65%;
+}

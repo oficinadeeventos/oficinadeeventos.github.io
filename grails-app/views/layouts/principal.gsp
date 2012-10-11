@@ -15,10 +15,10 @@
     <title>Oficina de Eventos <g:layoutTitle default=""/></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     %{--<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">--}%
-    <g:layoutHead/>
     <r:require module="principal"/>
-    <r:layoutResources/>
-    <r:layoutResources/>
+	<r:layoutResources/>
+	<r:layoutResources/>
+	<g:layoutHead/>
 
     <style type="text/css">
     .container {

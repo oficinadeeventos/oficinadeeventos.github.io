@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="principal"/>
-    <title></title>
+    <title>Casamentos e Formaturas</title>
     <r:require module="home"/>
 </head>
 
