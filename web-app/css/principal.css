@@ -3,13 +3,7 @@ html, body {
 }
 
 html {
-    background-image: linear-gradient(right bottom, rgb(242, 221, 189) 17%, rgb(250, 231, 210) 59%);
-    background-image: -o-linear-gradient(right bottom, rgb(242, 221, 189) 17%, rgb(250, 231, 210) 59%);
-    background-image: -moz-linear-gradient(right bottom, rgb(242, 221, 189) 17%, rgb(250, 231, 210) 59%);
-    background-image: -webkit-linear-gradient(right bottom, rgb(242, 221, 189) 17%, rgb(250, 231, 210) 59%);
-    background-image: -ms-linear-gradient(right bottom, rgb(242, 221, 189) 17%, rgb(250, 231, 210) 59%);
-
-    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0.17, rgb(242, 221, 189)), color-stop(0.59, rgb(250, 231, 210)));
+    background-color: rgba(255, 228, 192, 0.63);
 }
 
 .content {
@@ -108,11 +102,11 @@ fieldset {
 }
 
 body {
-    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
     font-size: 12px;
-    font-weight: normal;
     line-height: 15px;
-    color: #333;
+    color: #454545;
+    font-family: "Open Sans", Verdana, sans-serif;
+    font-weight: 300;
 }
 
 .span3 {
@@ -125,4 +119,210 @@ body {
     line-height: 14px;
     margin-bottom: 7px;
     font-family: inherit;
+}
+
+#contact-us-floating > li.facebook > div, #contact-us-floating > li.twitter > div, #contact-us-floating > li.email > div, #contact-us-floating > li.phone > div {
+    background: url('../images/icons-s4e834e2591.png') no-repeat;
+}
+
+#content-head{
+    background-color: #564d40;
+    background-image: url('../images/noise.png');
+    position: relative;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#contact-us-floating {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    margin-top: 20px !important;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    text-align: left;
+    z-index: 50;
+}
+#contact-us-floating > li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+@media all and (min-width: 1080px) {
+    #contact-us-floating {
+        left: -60px;
+    }
+}
+#contact-us-floating > li {
+    margin-bottom: 10px !important;
+    position: relative;
+    display: block;
+    height: 38px;
+    width: 38px;
+}
+#contact-us-floating > li:before {
+    content: '';
+    display: block;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    margin: 1px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 10;
+}
+#contact-us-floating > li.facebook:hover:before {
+    -webkit-box-shadow: 0 1px 20px #275ab0;
+    -moz-box-shadow: 0 1px 20px #275ab0;
+    box-shadow: 0 1px 20px #275ab0;
+}
+#contact-us-floating > li.facebook > div {
+    background-position: 0 -381px;
+}
+#contact-us-floating > li.twitter:hover:before {
+    -webkit-box-shadow: 0 1px 20px #31b8d8;
+    -moz-box-shadow: 0 1px 20px #31b8d8;
+    box-shadow: 0 1px 20px #31b8d8;
+}
+#contact-us-floating > li.twitter > div {
+    background-position: 0 -285px;
+}
+#contact-us-floating > li.email:hover:before {
+    -webkit-box-shadow: 0 1px 20px #e5b52f;
+    -moz-box-shadow: 0 1px 20px #e5b52f;
+    box-shadow: 0 1px 20px #e5b52f;
+}
+#contact-us-floating > li.email > div {
+    background-position: 0 -230px;
+    height: 38px;
+    width: 38px;
+}
+#contact-us-floating > li.phone:hover:before {
+    -webkit-box-shadow: 0 1px 20px #94be36;
+    -moz-box-shadow: 0 1px 20px #94be36;
+    box-shadow: 0 1px 20px #94be36;
+}
+#contact-us-floating > li.phone > div {
+    background-position: 0 -333px;
+}
+#contact-us-floating > li > a {
+    display: block;
+    z-index: 60;
+    position: relative;
+    height: 38px;
+    width: 38px;
+}
+#contact-us-floating > li .box {
+    white-space: nowrap;
+}
+#contact-us-floating > li.facebook > div:hover, #contact-us-floating > li.twitter > div:hover {
+    width: 200px;
+}
+#contact-us-floating > li.facebook .box, #contact-us-floating > li.twitter .box {
+    top: 7px;
+}
+#contact-us-floating > li.facebook .box:before, #contact-us-floating > li.twitter .box:before {
+    top: 4px;
+}
+#contact-us-floating > li.email > div {
+    top: -7px;
+    height: 55px;
+}
+#contact-us-floating > li.email > div:hover {
+    width: 252px;
+}
+#contact-us-floating > li.email .box {
+    top: 1px;
+}
+#contact-us-floating > li.email .box:before {
+    top: 19px;
+}
+#contact-us-floating > li.phone > div {
+    height: 40px;
+}
+#contact-us-floating > li.phone > div:hover {
+    width: 252px;
+}
+#contact-us-floating > li.phone .box {
+    top: 1px;
+}
+#contact-us-floating > li.phone .box:before {
+    top: 12px;
+}
+#contact-us-floating > li > div {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 38px;
+    width: 38px;
+    overflow: hidden;
+    z-index: 50;
+    -webkit-transition-property: width, height;
+    -moz-transition-property: width, height;
+    -o-transition-property: width, height;
+    transition-property: width, height;
+    -webkit-transition-duration: 0.3s, 0.3s;
+    -moz-transition-duration: 0.3s, 0.3s;
+    -o-transition-duration: 0.3s, 0.3s;
+    transition-duration: 0.3s, 0.3s;
+}
+#contact-us-floating > li > div:hover {
+    padding-right: 2px;
+}
+#contact-us-floating > li > div > .box {
+    margin-left: 50px;
+    position: relative;
+    display: inline-block;
+    background: rgba(236, 235, 235, 0.9);
+    -webkit-box-shadow: 1px 0 1px #ecebeb;
+    -moz-box-shadow: 1px 0 1px #ecebeb;
+    box-shadow: 1px 0 1px #ecebeb;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+#contact-us-floating > li > div > .box, #contact-us-floating > li > div > .box a {
+    color: #454545;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 4px;
+}
+#contact-us-floating > li > div > .box a:hover {
+    text-decoration: underline;
+}
+#contact-us-floating > li > div .box:before {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+    background-position: 0 -1655px;
+    height: 14px;
+    width: 7px;
+    position: absolute;
+    content: '';
+    display: block;
+}
+#contact-us-floating > li > div.right-side, #contact-us-floating > li > div.right-side a {
+    font-weight: 600;
+}
+#contact-us-floating > li > div.right-side .box:before {
+    left: -7px;
+}
+#contact-us-floating > li > div.bottom-side .box {
+    -webkit-box-shadow: 0 1px 1px #ecebeb;
+    -moz-box-shadow: 0 1px 1px #ecebeb;
+    box-shadow: 0 1px 1px #ecebeb;
+}
+#contact-us-floating > li > div.bottom-side .box:before {
+    left: 10px;
+    top: -7px;
+    background-position: 0 -1709px;
+    height: 7px;
+    width: 14px;
 }

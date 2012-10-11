@@ -54,9 +54,7 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="container">
     <g:layoutBody/>
-</div>
 
 <footer>
     <div class="container">
