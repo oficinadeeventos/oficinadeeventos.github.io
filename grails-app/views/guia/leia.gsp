@@ -1,39 +1,39 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-	<meta name="layout" content="principal"/>
-	<title>- Albuns de Fotos</title>
-	<style type="text/css">
-	.span4 {
-		width: 260px;
-	}
+    <meta name="layout" content="principal"/>
+    <title>- Guia de Eventos</title>
+        <style type="text/css">
+        .span4 {
+            width: 260px;
+        }
 
-	.span8 {
-		width: 610px;
-	}
+        .span8 {
+            width: 610px;
+        }
 
-	.span4 h2 {
-		font-size: 20px;
-		letter-spacing: -0.03em;
-		line-height: 28px;
-	}
+        .span4 h2 {
+            font-size: 20px;
+            letter-spacing: -0.03em;
+            line-height: 28px;
+        }
 
-	.span4 p {
-		font-size: 11px;
-		font-weight: normal;
-		line-height: 14px;
-		margin-bottom: 7px;
-		font-family: inherit;
-	}
+        .span4 p {
+            font-size: 11px;
+            font-weight: normal;
+            line-height: 14px;
+            margin-bottom: 7px;
+            font-family: inherit;
+        }
 
-	body {
-		font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-		font-size: 12px;
-		font-weight: normal;
-		line-height: 15px;
-		color: #333;
-	}
-	</style>
+        body {
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 15px;
+            color: #333;
+        }
+        </style>
 </head>
 
 <body>
@@ -53,17 +53,17 @@
 			</div>
 		</div>
 
-		<div class="span4" style="margin-left: 30px;">
-			<g:render template="listagem"/>
+        <div class="span4" style="margin-left: 30px;">
+            <g:render template="listagem"/>
 
-			<div style="height: 30px; width: 100%"></div>
+            <div style="height: 30px; width: 100%"></div>
 
-			<div class="fb-like-box" data-href="http://www.facebook.com/pages/Oficina-de-Eventos/117581011698155"
-				 data-width="250"
-				 data-show-faces="true" data-border-color="#e0ccaf" data-stream="false" data-header="true"></div>
-		</div>
+            <div class="fb-like-box" data-href="http://www.facebook.com/pages/Oficina-de-Eventos/117581011698155"
+                 data-width="250"
+                 data-show-faces="true" data-border-color="#e0ccaf" data-stream="false" data-header="true"></div>
+        </div>
 
-	</div>
+    </div>
 </div>
 </body>
 </html>

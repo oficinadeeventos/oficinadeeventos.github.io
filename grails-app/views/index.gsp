@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="principal"/>
-    <title>Oficina de Eventos</title>
+    <title></title>
     <r:require module="home"/>
 </head>
 

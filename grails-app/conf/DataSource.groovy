@@ -14,7 +14,7 @@ environments {
 
     development {
         dataSource {
-            dbCreate = "update"
+            dbCreate = "create"
             url = "jdbc:mysql://localhost:3306/site"
         }
     }

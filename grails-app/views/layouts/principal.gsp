@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta property="fb:admins" content="117581011698155" />
+    <meta property="fb:admins" content="117581011698155"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description"
+          content="Organização de eventos sociais e oficiais a 16 anos em Goiânia e região: Cerimonial, buffet, decoração tudo para fazer de seu evento um sucesso.">
+    <meta name="keywords"
+          content="Formaturas, eventos, eventos goiânia e região, casamentos, buffet, cerimonial, decoração, decoração de eventos, eventos sociais, eventos oficiais, cerimonialista, 15 anos">
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="REVISIT-AFTER" content="1 DAYS"/>
+    <meta name="RATING" http-equiv="PAGE-ENTER" content="RevealTrans(Duration=0,Transition=1)"/>
     <title>Oficina de Eventos <g:layoutTitle default=""/></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     %{--<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">--}%
