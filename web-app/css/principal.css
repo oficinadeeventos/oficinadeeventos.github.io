@@ -18,7 +18,7 @@ html {
 }
 
 .content .inner {
-    padding: 35px 20px 20px;
+    padding: 35px 15px 20px;
 }
 
 footer {
@@ -379,7 +379,6 @@ body {
 }
 .content {
 	background-color: rgba(255, 255, 255, 0.62);
-	min-height: 480px;
 	margin-right: 10px;
 	position: relative;
 }

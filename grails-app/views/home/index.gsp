@@ -32,13 +32,13 @@
 	<div id="menuWrapper" class="menuWrapper bg1">
 		<ul id="contact-us-floating" style="top: 0px; ">
 			<li class="facebook">
-				<a href="https://www.facebook.com/ZeroTurnaround" title="Oficina de Eventos no Facebook"
+				<a href="https://www.facebook.com/oficinadeeventos.gyn" title="Oficina de Eventos no Facebook"
 				   target="_blank"></a>
 
 				<div class="right-side"></div>
 			</li>
 			<li class="twitter">
-				<a href="https://twitter.com/javarebel" title="Oficina de Eventos no Twitter" target="_blank"></a>
+				<a href="https://twitter.com/oficinadeevntos" title="Oficina de Eventos no Twitter" target="_blank"></a>
 
 				<div class="right-side"></div>
 			</li>
@@ -93,25 +93,18 @@
 <section>
 	<div id="frontpage-content" class="wrapper content-body">
 		<div class="content">
-			<div class="frontpage-section jr-section">
-
-			</div>
-
-			<div class="frontpage-section lr-section">
-
-			</div>
-
 			<div class="row">
-				<h4><b>Recentes:</b></h4>
+                <div class="span10">
+				<h4><small><b>Recentes</b></small></h4>
+                </div>
 				<g:each in="${highLights}" var="highLight">
 					<div class="span3">
 						<div style="height: 120px">
 							<p><a href="${highLight.url}" title="${highLight.alt}"><b>${highLight.titulo}</b></a></p>
-
 							<p style="text-align: justify">${highLight.descricao.short(200)}</p>
 						</div>
 
-						<p>Em ${highLight.tipo}</p>
+						<p><small>Em ${highLight.tipo}</small></p>
 					</div>
 				</g:each>
 			</div>

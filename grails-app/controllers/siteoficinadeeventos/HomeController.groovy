@@ -16,7 +16,7 @@ class HomeController {
         albuns.sort(false) {it.date_created_time}
         albuns = albuns[(0..1)]
         highLights += albuns.collect {
-            [titulo: "Veja as novas fotos",
+            [titulo: it.name,
                     descricao: descricaoDoAlbum(it),
                     alt: it.name,
                     tipo: 'Albúm de fotos',
